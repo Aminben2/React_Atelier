@@ -1,0 +1,84 @@
+* {
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #e5cff7;
+}
+.ttc {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  justify-content: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #f6f5f5;
+}
+
+.pht,
+.tva,
+.result,
+.buttons {
+  padding: 5px;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pht label,
+.tva label,
+.result label {
+  font-size: large;
+  font-weight: bold;
+}
+
+.pht input,
+.tva input,
+.result input {
+  font-size: large;
+  padding: 5px;
+  border: 2px solid #9d76c1;
+  background-color: transparent;
+}
+.pht input:focus,
+.tva input:focus,
+.result input:focus {
+  outline: none;
+  border: 2px solid #5b0888;
+  background-color: #e5cff7;
+  transition: background-color 0.5s linear;
+}
+.buttons {
+  justify-content: center;
+  column-gap: 10px;
+}
+
+.buttons button {
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  background-color: #5b0888;
+  border-radius: 8px;
+  width: 100px;
+  font-size: large;
+  cursor: pointer;
+}
+
+fieldset {
+  position: relative;
+  border: none;
+  outline: 2px solid #9d76c1;
+  padding: 30px;
+}
+fieldset legend {
+  position: absolute;
+  width: fit-content;
+  top: -15px;
+  left: 50%;
+  transform: translateX(-53.5px);
+  background-color: #5b0888;
+  color: white;
+  padding: 5px;
+}
